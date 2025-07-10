@@ -35,7 +35,7 @@ app.use(express.json());
 // This is the correct, secure way to handle CORS.
 // It reads the allowed frontend URL from your .env file.
 const corsOptions = {
-  origin: "*",
+  origin: process.env.FRONTEND_URL,
   optionsSuccessStatus: 200,
 };
 // Make sure FRONTEND_URL in your .env file matches your browser's origin
