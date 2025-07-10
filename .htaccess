@@ -1,0 +1,5 @@
+# .htaccess   (inside the folder that holds index.html)
+
+RewriteEngine On
+
+RewriteRule ^ai-testing/api/(.*)$ https://103.13.210.84:1033/$1  [P,L]
